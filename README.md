@@ -169,6 +169,47 @@ Adds salary entry for all users
 - `user_id` in `records` references `users(user_id)`
 
 ---
+##  Setup Instructions
+Follow these steps to run the **Finance Data Processing** locally:
+---
+###  1. Clone the Repository
+```bash
+git clone <your-repo-link>
+cd FD_Final
+```
+#### Create virtual environment
+```python -m venv venv```
+#### Activate venv (Windows)
+```venv\Scripts\activate```
+#### Activate venv (Mac/Linux)
+```source venv/bin/activate```
+
+### 2.Install Dependencies
+```pip install flask psycopg2```
+
+-----------------------
+### 3.Setup Database
+```Create a PostgreSQL database named:
+Finance_db
+```
+Run the SQL file:
+-- Run Finance_db.sql
+
+----------------------------------------------------
+### 4.Configure Database
+Update credentials in database.py:
+```
+host="localhost"
+database="Finance_db"
+user="postgres"
+password="your_password"
+```
+--------------------------------------------------------------
+### 5. Run Application
+```python app.py```
+
+-------
+
 ## API Testing
 All APIs were tested using **Postman**:
 - Used headers for role-based access
