@@ -3,10 +3,10 @@
 ## Finance Data Processing Backend System
 The Finance Data Processing is a backend application designed to efficiently manage and analyze financial data for multiple users. Built using Flask and PostgreSQL, the system provides a structured way to handle user management, financial records, and real-time insights through API endpoints.All APIs were thoroughly tested using Postman, ensuring proper request handling, validation, and response accuracy.
 
-The system supports three roles:
-Admin
-Analyst
-Viewer
+The system supports three roles: 
+Admin,
+Analyst,
+Viewer,
 Each role has different levels of access to the API endpoints.
 
 ## Project Structure
