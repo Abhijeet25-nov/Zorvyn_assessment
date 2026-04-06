@@ -33,7 +33,6 @@ Finace_Daashboard/
 - **API Testing Tool:** Postman
 - **Database:** PostgreSQL
 - **Library:** psycopg2
-- **Architecture:** Modular (Blueprint-based)
 
 ## Authentication & Authorization
 - **Role-based access is implemented using request headers:**
@@ -45,6 +44,7 @@ Finace_Daashboard/
 1.Create User
 - POST /users
 - Access: Admin
+
 - Body:
 ```
 {
@@ -54,6 +54,7 @@ Finace_Daashboard/
   "role": "analyst"
 }
 ```
+
 ### Validations:
 - Email format check
 - Passcode must be numeric and ≤ 4 digits
@@ -62,7 +63,8 @@ Finace_Daashboard/
 2.Delete User
 - DELETE /users
 - Access: Admin
-Body:
+  
+- Body:
 ```
 {
   "user_id": "AN12345",
@@ -75,7 +77,8 @@ Body:
 3.Login
 - POST /login
 - Access: Admin, Analyst
--Body:
+
+- Body:
 ```
 {
   "email": "test@gmail.com",
